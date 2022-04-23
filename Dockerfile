@@ -12,8 +12,7 @@ WORKDIR /mayhem-cmake-example
 ## TODO: ADD YOUR BUILD INSTRUCTIONS HERE.
 RUN mkdir build
 WORKDIR build
-RUN CC=clang CXX=clang++ cmake .. && \
-    make
+RUN CC=clang CXX=clang++ cmake .. && make
 
 # Package Stage
 FROM --platform=linux/amd64 ubuntu:20.04
